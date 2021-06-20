@@ -20,9 +20,9 @@ public class QuickPrimeCounter {
 	}
 	public boolean isPrime(int N) {
 		for (int i = 1; i <= alreadyFound.length; i++) {
-			if (alreadyFound[i-1] > Math.sqrt(N))
+			if (alreadyFound[i - 1] > Math.sqrt(N))
 				return true;
-			else if (alreadyFound[i-1] != 0 && N%alreadyFound[i-1] == 0)
+			else if (alreadyFound[i-1] != 0 && N % alreadyFound[i - 1] == 0)
 				return false;
 		}
 		return false;

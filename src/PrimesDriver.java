@@ -1,17 +1,6 @@
 public class PrimesDriver {
 	public static void main(String[] args) {
-		//isPrime
-		SimplePrimeCounter fpcTest1 = new SimplePrimeCounter();
-		System.out.println(fpcTest1.isPrime(0));
-		System.out.println(fpcTest1.isPrime(1));
-		System.out.println(fpcTest1.isPrime(100));
-		System.out.println(fpcTest1.isPrime(2315));
-		System.out.println(fpcTest1.isPrime(8732));
-		System.out.println(fpcTest1.isPrime(2));
-		System.out.println(fpcTest1.isPrime(101));
-		System.out.println(fpcTest1.isPrime(12323));
-		
-		//countPrimes
+		//SimplePrimeCounter
 		long initialT, finalT, numPrimes;
 		SimplePrimeCounter fpcTest2 = new SimplePrimeCounter();
 		initialT = System.currentTimeMillis();

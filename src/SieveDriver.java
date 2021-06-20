@@ -1,5 +1,5 @@
 public class SieveDriver {
-	public static void main (String args[]) {
+	public static void main (String[] args) {
 		//Sieve of Eratosthenes
 		long initialT, finalT, numPrimes;
 		EratosthenesSieve finalTest1 = new EratosthenesSieve();

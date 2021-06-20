@@ -5,9 +5,9 @@ public class EratosthenesSieve {
 		// initialized as all false;
 		// mark non-primes by setting element to true
 		
-		for(int p = 2; p*p <= limit; p++)
+		for(int p = 2; p * p <= limit; p++)
 			if(!isPrimes[p])
-				for(int i = p*2; i <= limit; i += p)
+				for(int i = p * 2; i <= limit; i += p)
 					isPrimes[i] = true;
 		
 		for(int i = 2; i <= limit; i++)

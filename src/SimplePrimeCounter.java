@@ -1,7 +1,7 @@
 public class SimplePrimeCounter {
 	public boolean isPrime(int N) {
-		for (int i = 2; i < N-1; i++)
-			if (N%i == 0)
+		for (int i = 2; i < N - 1; i++)
+			if (N % i == 0)
 				return false;
 		return N > 1;
 	}
