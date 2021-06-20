@@ -60,40 +60,34 @@ public class PrimesDriver {
 		//100000: 14ms
 		//1000000: 326ms
 		
-		//QuickPrimeCounter
-		QuickPrimeCounter fastestTest1 = new QuickPrimeCounter();
+		//Sieve of Eratosthenes
+		EratosthenesSieve finalTest1 = new EratosthenesSieve();
 		initialT = System.currentTimeMillis();
-		numPrimes = fastestTest1.countPrimes(1000);
+		numPrimes = finalTest1.countPrimes(1000);
 		finalT = System.currentTimeMillis();
 		System.out.println((finalT - initialT) + "ms, " + numPrimes + " out of 1000");
 		initialT = System.currentTimeMillis();
-		numPrimes = fastestTest1.countPrimes(10000);
+		numPrimes = finalTest1.countPrimes(10000);
 		finalT = System.currentTimeMillis();
 		System.out.println((finalT - initialT) + "ms, " + numPrimes + " out of 10000");
 		initialT = System.currentTimeMillis();
-		numPrimes = fastestTest1.countPrimes(100000);
+		numPrimes = finalTest1.countPrimes(100000);
 		finalT = System.currentTimeMillis();
 		System.out.println((finalT - initialT) + "ms, " + numPrimes + " out of 100000");
 		initialT = System.currentTimeMillis();
-		numPrimes = fastestTest1.countPrimes(1000000);
+		numPrimes = finalTest1.countPrimes(1000000);
 		finalT = System.currentTimeMillis();
 		System.out.println((finalT - initialT) + "ms, " + numPrimes + " out of 1000000");
 		initialT = System.currentTimeMillis();
-		numPrimes = fastestTest1.countPrimes(10000000);
+		numPrimes = finalTest1.countPrimes(10000000);
 		finalT = System.currentTimeMillis();
 		System.out.println((finalT - initialT) + "ms, " + numPrimes + " out of 10000000");
 		initialT = System.currentTimeMillis();
-		numPrimes = fastestTest1.countPrimes(100000000);
+		numPrimes = finalTest1.countPrimes(100000000);
 		finalT = System.currentTimeMillis();
 		System.out.println((finalT - initialT) + "ms, " + numPrimes + " out of 100000000");
-		//1000: 0ms
-		//10000: 1ms
-		//100000: 6ms
-		//1000000: 76ms
-		//10000000: 1521ms
-		//100000000: 34231ms
 		
-		//Primes:
+		//Total primes:
 		//1000: 168
 		//10000: 1229
 		//100000: 9592
